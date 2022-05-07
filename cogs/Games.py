@@ -129,7 +129,7 @@ class Games(commands.Cog, name="Games"):
                 ttt_view_obj.message = await ctx.send(embed=ttt_view_obj.game_embed, view=ttt_view_obj)
     
 
-    @commands.command(name="akinator")
+    @commands.command(name="akinator", aliases=['aki'])
     @commands.max_concurrency(number=1, per=BucketType.default, wait=False)
     async def aki_start(self, ctx):
         """Starts a game of akinator!"""
